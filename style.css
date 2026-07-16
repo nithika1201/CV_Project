@@ -1,0 +1,700 @@
+/* ---------------------------
+   RESET
+--------------------------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f4f6f9;
+
+    color:#333;
+
+}
+
+/* ---------------------------
+   NAVIGATION
+--------------------------- */
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#0d47a1;
+
+    padding:18px 60px;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+}
+
+.logo h2{
+
+    color:white;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+}
+
+.nav-links li{
+
+    margin-left:25px;
+
+}
+
+.nav-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:0.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#ffd54f;
+
+}
+
+/* ---------------------------
+   TOP BAR
+--------------------------- */
+
+.top-bar{
+
+    background:#1565c0;
+
+    color:white;
+
+    padding:15px;
+
+    text-align:center;
+
+}
+
+.top-bar p{
+
+    margin-top:5px;
+
+}
+
+/* ---------------------------
+   MAIN CONTAINER
+--------------------------- */
+
+.container{
+
+    display:flex;
+
+    width:90%;
+
+    margin:30px auto;
+
+    box-shadow:0px 0px 20px rgba(0,0,0,0.2);
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+/* ---------------------------
+   LEFT PANEL
+--------------------------- */
+
+.left-panel{
+
+    width:30%;
+
+    background:#1976d2;
+
+    color:white;
+
+    padding:30px;
+
+}
+
+.left-panel img{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    display:block;
+
+    margin:auto;
+
+    border:5px solid white;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+.left-panel img:hover{
+
+    transform:scale(1.05);
+
+}
+
+.left-panel h2{
+
+    text-align:center;
+
+    margin-top:20px;
+
+}
+
+.left-panel h3{
+
+    margin-top:25px;
+
+    margin-bottom:10px;
+
+}
+
+.left-panel p{
+
+    margin-bottom:10px;
+
+    line-height:1.6;
+
+}
+
+.left-panel ul{
+
+    margin-left:20px;
+
+}
+
+.left-panel li{
+
+    margin-bottom:8px;
+
+}
+
+.left-panel a{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+.left-panel a:hover{
+
+    color:yellow;
+
+}
+
+hr{
+
+    margin:20px 0;
+
+}
+
+/* ---------------------------
+   BUTTONS
+--------------------------- */
+
+button{
+
+    width:100%;
+
+    padding:10px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#ffffff;
+
+    color:#1565c0;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+}
+
+button:hover{
+
+    background:#ffd54f;
+
+    color:black;
+
+}
+
+/* ---------------------------
+   RIGHT PANEL
+--------------------------- */
+
+.right-panel{
+
+    width:70%;
+
+    background:white;
+
+    padding:35px;
+
+}
+
+.right-panel h1{
+
+    color:#0d47a1;
+
+    font-size:38px;
+
+}
+
+.right-panel h2{
+
+    color:#1565c0;
+
+    margin-top:25px;
+
+    margin-bottom:15px;
+
+    border-bottom:2px solid #1565c0;
+
+    padding-bottom:5px;
+
+}
+
+.right-panel h3{
+
+    color:#555;
+
+    margin-bottom:10px;
+
+}
+
+.right-panel p{
+
+    line-height:1.8;
+
+    text-align:justify;
+
+}
+
+/* ---------------------------
+   TABLE
+--------------------------- */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:15px;
+
+}
+
+table,th,td{
+
+    border:1px solid gray;
+
+}
+
+th{
+
+    background:#dbe9ff;
+
+}
+
+th,td{
+
+    padding:12px;
+
+    text-align:center;
+
+}
+/* ==========================================
+   PROJECT CARDS
+========================================== */
+
+.card{
+
+    background:#f8f9fa;
+
+    padding:20px;
+
+    margin-top:20px;
+
+    border-radius:12px;
+
+    box-shadow:0px 4px 10px rgba(0,0,0,0.15);
+
+    transition:0.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    background:#e3f2fd;
+
+}
+
+.card h3{
+
+    color:#1565c0;
+
+    margin-bottom:10px;
+
+}
+
+/* ==========================================
+   CONTACT FORM
+========================================== */
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-top:20px;
+
+}
+
+input,
+
+textarea{
+
+    padding:12px;
+
+    margin-bottom:15px;
+
+    border:1px solid gray;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+textarea{
+
+    resize:none;
+
+}
+
+form button{
+
+    width:220px;
+
+    background:#1565c0;
+
+    color:white;
+
+}
+
+form button:hover{
+
+    background:#0d47a1;
+
+}
+
+/* ==========================================
+   IMAGE MODAL
+========================================== */
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,0.8);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.modal img{
+
+    width:350px;
+
+    border-radius:15px;
+
+    border:5px solid white;
+
+}
+
+#closeModal{
+
+    position:absolute;
+
+    top:20px;
+
+    right:40px;
+
+    font-size:40px;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+/* ==========================================
+   TESTIMONIAL
+========================================== */
+
+#testimonial{
+
+    margin-top:20px;
+
+    background:#e3f2fd;
+
+    padding:20px;
+
+    border-left:5px solid #1565c0;
+
+    border-radius:10px;
+
+    font-style:italic;
+
+}
+
+/* ==========================================
+   SCROLL BUTTON
+========================================== */
+
+#topButton{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#1565c0;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    display:none;
+
+    box-shadow:0px 4px 10px rgba(0,0,0,0.3);
+
+}
+
+#topButton:hover{
+
+    background:#0d47a1;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    background:#0d47a1;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:30px;
+
+}
+
+/* ==========================================
+   DARK MODE
+========================================== */
+
+.dark-mode{
+
+    background:#121212;
+
+    color:white;
+
+}
+
+.dark-mode .right-panel{
+
+    background:#222;
+
+    color:white;
+
+}
+
+.dark-mode .left-panel{
+
+    background:#333;
+
+}
+
+.dark-mode .navbar{
+
+    background:#1a1a1a;
+
+}
+
+.dark-mode footer{
+
+    background:#1a1a1a;
+
+}
+
+.dark-mode table{
+
+    color:white;
+
+}
+
+.dark-mode th{
+
+    background:#555;
+
+}
+
+.dark-mode .card{
+
+    background:#444;
+
+    color:white;
+
+}
+
+.dark-mode input,
+
+.dark-mode textarea{
+
+    background:#333;
+
+    color:white;
+
+    border:1px solid #666;
+
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media(max-width:768px){
+
+.container{
+
+    flex-direction:column;
+
+}
+
+.left-panel{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.right-panel{
+
+    width:100%;
+
+}
+
+.navbar{
+
+    flex-direction:column;
+
+}
+
+.nav-links{
+
+    flex-direction:column;
+
+    margin-top:15px;
+
+}
+
+.nav-links li{
+
+    margin:10px 0;
+
+}
+
+table{
+
+    font-size:14px;
+
+}
+
+}
+
+/* ==========================================
+   SMOOTH SCROLL
+========================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}

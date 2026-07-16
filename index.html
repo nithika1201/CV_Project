@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nithika K | Interactive Resume</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        <h2>Nithika K</h2>
+    </div>
+
+    <ul class="nav-links">
+
+        <li><a href="#home">Home</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#education">Education</a></li>
+
+        <li><a href="#projects">Projects</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- Welcome -->
+
+<section class="top-bar">
+
+    <h3 id="welcomeMessage"></h3>
+
+    <p id="currentDate"></p>
+
+    <p id="digitalClock"></p>
+
+</section>
+
+<!-- Main Resume -->
+
+<section class="container" id="home">
+
+<!-- Left Panel -->
+
+<div class="left-panel">
+
+    <img src="images/profile.jpeg"
+    id="profileImage"
+    alt="Profile Photo">
+
+    <h2>Nithika K</h2>
+
+    <p>Computer Science Engineering Student</p>
+
+    <hr>
+
+    <h3>Contact</h3>
+
+    <p><i class="fa-solid fa-envelope"></i>
+    nithika1201@gmail.com</p>
+
+    <p><i class="fa-solid fa-phone"></i>
+    8197985989</p>
+
+    <p><i class="fa-solid fa-location-dot"></i>
+    Karur, Tamil Nadu</p>
+
+    <p>
+
+        <i class="fa-brands fa-linkedin"></i>
+
+        <a href="https://www.linkedin.com/in/nithika-k-kct/"
+        target="_blank">
+
+        LinkedIn
+
+        </a>
+
+    </p>
+
+    <hr>
+
+    <h3>Languages</h3>
+
+    <ul>
+
+        <li>English</li>
+
+        <li>Tamil</li>
+
+        <li>Hindi</li>
+
+        <li>Kannada</li>
+
+    </ul>
+
+    <hr>
+
+    <h3>Skills</h3>
+
+    <button onclick="showAll()">All</button>
+
+    <button onclick="showProgramming()">
+    Programming
+    </button>
+
+    <button onclick="showWeb()">
+    Web
+    </button>
+
+    <div id="skillList">
+
+        <p class="programming">C Programming</p>
+
+        <p class="programming">Java</p>
+
+        <p class="programming">Python</p>
+
+        <p class="web">HTML</p>
+
+        <p class="web">CSS</p>
+
+        <p class="web">JavaScript</p>
+
+    </div>
+
+    <br>
+
+    <button id="themeBtn">
+        🌙 Dark / Light Mode
+    </button>
+
+    <br><br>
+
+    <button onclick="downloadResume()">
+        📄 Download Resume
+    </button>
+
+</div>
+
+<!-- Right Panel -->
+
+<div class="right-panel">
+
+<section id="about">
+
+<h1>Nithika K</h1>
+
+<h3>Computer Science Engineering Student</h3>
+
+<h2>Career Objective</h2>
+
+<p>
+
+A passionate Computer Science Engineering student eager to
+apply my technical knowledge in software development,
+Artificial Intelligence and Full Stack Web Development
+while continuously learning and contributing to innovative
+software solutions.
+
+</p>
+
+<h2>Profile Summary</h2>
+
+<p>
+
+Highly motivated engineering student with knowledge in
+HTML, CSS, JavaScript, Java, Python, SQL and AI.
+Strong problem-solving, communication and teamwork
+skills.
+
+</p>
+
+</section>
+
+<section id="education">
+
+<h2>Education</h2>
+
+<table>
+
+<tr>
+
+<th>Qualification</th>
+
+<th>Institution</th>
+
+<th>Year</th>
+
+<th>Score</th>
+
+</tr>
+
+<tr>
+
+<td>B.E Computer Science Engineering</td>
+
+<td>Kumaraguru College of Technology</td>
+
+<td>2024-2028</td>
+
+<td>8.0 CGPA</td>
+
+</tr>
+
+<tr>
+
+<td>Higher Secondary</td>
+
+<td>Green Park Higher Secondary School</td>
+
+<td>2024</td>
+
+<td>90%</td>
+
+</tr>
+
+<tr>
+
+<td>SSLC</td>
+
+<td>Sri Chaitanya Techno School</td>
+
+<td>2022</td>
+
+<td>87%</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div id="projectContainer">
+
+<!-- JavaScript will create project cards -->
+
+</div>
+
+</section>
+<!-- Certifications -->
+
+<section id="certifications">
+
+    <h2>Certifications</h2>
+
+    <article class="card">
+
+        <h3>Empowering Education through Assistive Technology</h3>
+
+        <p>Completed a Coursera certification focused on using assistive technologies to enhance education.</p>
+
+    </article>
+
+    <article class="card">
+
+        <h3>Workshop on Aerial Robotics</h3>
+
+        <p>Participated in a hands-on workshop on drone technology and aerial robotics.</p>
+
+    </article>
+
+    <article class="card">
+
+        <h3>AI for Everyone</h3>
+
+        <p>Completed an introductory AI learning program covering the fundamentals of Artificial Intelligence.</p>
+
+    </article>
+
+</section>
+
+<!-- Internship -->
+
+<section id="internship">
+
+    <h2>Internship</h2>
+
+    <article class="card">
+
+        <h3>KSI Social Internship</h3>
+
+        <p><strong>Domain:</strong> Education</p>
+
+        <p>
+            Contributed to educational initiatives by supporting learning activities
+            and community engagement programs.
+        </p>
+
+    </article>
+
+</section>
+
+<!-- Contact Form -->
+
+<section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Enter Your Name">
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter Your Email">
+
+        <input
+            type="text"
+            id="phone"
+            placeholder="Enter Your Phone Number">
+
+        <textarea
+            id="message"
+            rows="5"
+            placeholder="Enter Your Message"></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+</section>
+
+<!-- Testimonials -->
+
+<section id="testimonialSection">
+
+    <h2>Testimonials</h2>
+
+    <div id="testimonial">
+
+        "A dedicated learner with excellent teamwork and communication skills."
+
+    </div>
+
+</section>
+
+</div>
+
+</section>
+
+<!-- Image Modal -->
+
+<div id="imageModal" class="modal">
+
+    <span id="closeModal">&times;</span>
+
+    <img id="modalImage">
+
+</div>
+
+<!-- Scroll To Top -->
+
+<button id="topButton">
+
+    ⬆
+
+</button>
+
+<!-- Footer -->
+
+<footer>
+
+    <p>
+
+        © <span id="year"></span>
+
+        Nithika K | All Rights Reserved
+
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
